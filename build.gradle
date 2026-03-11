@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'edu.odu.cs.cs350'
-version = '1.0-SNAPSHOT'
+
 
 repositories {
     mavenCentral()
@@ -18,4 +18,12 @@ dependencies {
 
 application {
     mainClass = 'edu.odu.cs.cs350.CodeComp'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'edu.odu.cs.cs350.CodeComp' 
+        )
+    }
 }
